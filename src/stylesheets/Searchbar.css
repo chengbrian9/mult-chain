@@ -1,0 +1,31 @@
+.searchbar {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 15px;
+}
+
+#search {
+  width: 50vw;
+  padding: 5px 5px 5px 5px;
+  font-family: 'joystix';
+  
+}
+
+#directions{
+  padding-bottom: 30px;
+}
+
+button {
+  border-radius: 5px;
+  height: 25px;
+  background-color: #3465a4;
+  color:white;
+  font-family: 'joystix';
+}
+
+#buttondiv{
+  margin-top: 10px;
+}
+

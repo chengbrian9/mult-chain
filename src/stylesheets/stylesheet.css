@@ -1,0 +1,17 @@
+@font-face {
+  font-family: joystix;
+  src: url('/src/assets/joystix_monospace.ttf')
+}
+
+body {
+  margin: 0;
+  font-family: 'joystix';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

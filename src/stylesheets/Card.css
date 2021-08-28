@@ -1,0 +1,10 @@
+
+img {
+  display: grid;
+  justify-content: center;
+  max-height: 275px;
+  max-width: 275px;
+  height: auto;
+  width: auto;
+  box-shadow: 5px 5px 10px lightslategray
+}

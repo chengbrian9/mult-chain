@@ -1,0 +1,21 @@
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  justify-content: center; 
+  text-align: center;
+  padding-top: 50px;
+  
+}
+
+.cards-container{
+  display: grid;
+  justify-content: center; 
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
