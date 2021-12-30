@@ -7,23 +7,27 @@ import Searchbar from '../components/Searchbar.jsx';
 
 const MainContainer = () => {
   const [ walletAddress, setAddressState ] = useState(' ')
-
+  const [ savedAddress, setSavedAddress ] = useState(' ')
+  
   const onClickHandler = e => {
     setAddressState(e.target.value)
     console.log(walletAddress)
   }
-  const handleSubmit = e => {
+  const handleAddress = e => {
+    e.preventDefault();
+    setSavedAddress(`${e.target.value.trim()}`)
+  }
+  const handleSubmit = (e) => {
     e.preventDefault()
-    setAddressState(e.target.value.trim())
+    setAddressState(savedAddress)
   }
-  
 
-  if (walletAddress == '') {
-    fetch('/api') 
-      .then(res => res.json())
-      .then(res => setAddressState(res))
-      .catch(err => console.log(err))
-  }
+  // if (walletAddress == '') {
+  //   fetch('/api') 
+  //     .then(res => res.json())
+  //     .then(res => setAddressState(res))
+  //     .catch(err => console.log(err))
+  // }
   return (
     <div>
       <NaviContainer className='navi-container' 
@@ -35,6 +39,7 @@ const MainContainer = () => {
         walletAddress={walletAddress}
         onSubmitHandler={onClickHandler}
         handleSubmit={handleSubmit}
+        handleAddress={handleAddress}
         />
       <CardsContainer className='cards-container' 
         walletAddress={walletAddress} />
