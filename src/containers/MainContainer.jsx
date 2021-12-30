@@ -1,26 +1,12 @@
 import React, { useState } from 'react';
 import NaviContainer from '../containers/NaviContainer.jsx'
 import CardsContainer from '../containers/CardsContainer.jsx';
-
+import WalletSelector from '../components/WalletSelector.jsx';
 import '../stylesheets/MainContainer.css';
 import Searchbar from '../components/Searchbar.jsx';
 
-const MainContainer = () => {
-  const [ walletAddress, setAddressState ] = useState(' ')
-  const [ savedAddress, setSavedAddress ] = useState(' ')
+const MainContainer = ({ walletAddress, handleAddress, handleSubmit, setAddressState, onClickHandler }) => {
   
-  const onClickHandler = e => {
-    setAddressState(e.target.value)
-    console.log(walletAddress)
-  }
-  const handleAddress = e => {
-    e.preventDefault();
-    setSavedAddress(`${e.target.value.trim()}`)
-  }
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setAddressState(savedAddress)
-  }
 
   return (
     <div>
@@ -34,6 +20,10 @@ const MainContainer = () => {
         onSubmitHandler={onClickHandler}
         handleSubmit={handleSubmit}
         handleAddress={handleAddress}
+        />
+      <WalletSelector 
+        walletAddress={walletAddress}
+        setAddressState={setAddressState}
         />
       <CardsContainer className='cards-container' 
         walletAddress={walletAddress} />

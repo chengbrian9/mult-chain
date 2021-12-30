@@ -15,12 +15,6 @@ const NaviContainer = ({
   return (
     <div className='navi-container'>
       <div><Header className='App-header' /></div>
-      <div><WalletSelector 
-        walletAddress={walletAddress}
-        setAddress={selectAddress}
-        setAddressState={setAddressState}
-        onClickHandler={onClickHandler}
-        /></div>
     </div>
   )
 }

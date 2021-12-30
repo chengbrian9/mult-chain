@@ -9,12 +9,12 @@ const CardsContainer = ({ walletAddress }) => {
 
   // External API Call
   useEffect(() => { 
-    if (walletAddress.length > 40) {
+    if (walletAddress.length > 30) {
+    setData([])
     axios.get(`https://api.opensea.io/api/v1/assets?owner=${walletAddress}&order_by=sale_price&order_direction=desc&offset=0&limit=50`)
     .then(data => setData(data.data.assets))
     .catch(err => {
-      alert('Invalid Address!')
-      setData([])
+      alert('Invalid address, please try a different address!')
       console.log(err)
     })
     }
