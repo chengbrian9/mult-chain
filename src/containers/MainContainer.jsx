@@ -22,12 +22,6 @@ const MainContainer = () => {
     setAddressState(savedAddress)
   }
 
-  // if (walletAddress == '') {
-  //   fetch('/api') 
-  //     .then(res => res.json())
-  //     .then(res => setAddressState(res))
-  //     .catch(err => console.log(err))
-  // }
   return (
     <div>
       <NaviContainer className='navi-container' 
