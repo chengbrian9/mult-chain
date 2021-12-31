@@ -44,6 +44,12 @@ const App = () => {
       } else {
         console.log('No authorized account found')
       }
+
+      if (ethereum){
+        ethereum.on('accountsChanged', () => {
+          location.reload();
+        })
+      }
     } catch(error) {
       console.log(error);
     }

@@ -14,6 +14,7 @@ const Searchbar = ({ walletAddress, handleSubmit, handleAddress, setAddressState
     const accounts = await ethereum.request({method: 'eth_requestAccounts'});
     console.log("Successfully connected Metamask wallet ", accounts[0]);
     setAddressState(accounts[0]);
+    
   } catch (error) {
       console.log(error);
     }     
