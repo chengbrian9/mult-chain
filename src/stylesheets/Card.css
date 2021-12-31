@@ -2,9 +2,20 @@
 img {
   display: grid;
   justify-content: center;
-  max-height: 275px;
-  max-width: 275px;
   height: auto;
   width: auto;
+  max-height: fit-content;
+  max-width: 300px;
   box-shadow: 5px 5px 10px lightslategray
+}
+
+#jpeg {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  height: 300px;
+  width: 300px;
 }

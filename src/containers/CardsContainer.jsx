@@ -29,9 +29,17 @@ const CardsContainer = ({ walletAddress }) => {
   let cards = [];
   if (data) {
     for (let i = 0; i < data.length; i++) {
-      cards.push(<Card 
+      console.log(data[i].image_url)
+      if (data[i].image_url.includes('.svg')){
+        cards.push(<Card 
+          className={'svg'}
           key={i}
           data={data[i]} />)
+      } else {
+        cards.push(<Card 
+            key={i}
+            data={data[i]} />)
+      }
     }
 }
   return (

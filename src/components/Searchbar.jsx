@@ -1,8 +1,23 @@
 import React, { useState } from 'react';
 import '../stylesheets/Searchbar.css';
+import mmlogo from '../assets/mm.png';
 
-const Searchbar = ({ walletAddress, handleSubmit, handleAddress }) => {
+const Searchbar = ({ walletAddress, handleSubmit, handleAddress, setAddressState }) => {
   
+  const connectWallet = async () => {
+    try {
+      const { ethereum } = window;
+      if (!ethereum) {
+        alert("get Metamask foo!")
+        return;
+      } 
+    const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+    console.log("Successfully connected Metamask wallet ", accounts[0]);
+    setAddressState(accounts[0]);
+  } catch (error) {
+      console.log(error);
+    }     
+  }
   return (
     <div className='searchbar'>
       <h1>Welcome to the meta-verse!</h1>
@@ -14,7 +29,15 @@ const Searchbar = ({ walletAddress, handleSubmit, handleAddress }) => {
         onChange={handleAddress}
         defaultValue={walletAddress}
         /></div>
-        <div id='buttondiv'><button type='submit'>Search</button></div>
+        <div id='buttondiv'>
+          <button type='submit'>Search</button>
+        </div>
+        {!walletAddress && (
+          <button className="wallet" onClick={connectWallet}>
+            {/* <img style={{height: '25px', width: '30px', float: 'left', marginRight: '10px'}} src={mmlogo}/>  */}
+            Connect Wallet 
+          </button>
+        )}
       </form>
     </div>
   )

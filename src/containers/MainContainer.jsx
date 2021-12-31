@@ -1,30 +1,28 @@
 import React, { useState } from 'react';
-import NaviContainer from '../containers/NaviContainer.jsx'
+import AddressContainer from './AddressContainer.jsx'
 import CardsContainer from '../containers/CardsContainer.jsx';
-import WalletSelector from '../components/WalletSelector.jsx';
+import Header from '../components/Header.jsx'
 import '../stylesheets/MainContainer.css';
-import Searchbar from '../components/Searchbar.jsx';
+
 
 const MainContainer = ({ walletAddress, handleAddress, handleSubmit, setAddressState, onClickHandler }) => {
   
 
   return (
     <div>
-      <NaviContainer className='navi-container' 
+      <Header className='App-header'
         setAddressState={setAddressState}
         walletAddress={walletAddress}
-        onClickHandler={onClickHandler}
-       />
-      <Searchbar 
+        onClickHandler={onClickHandler} />
+      
+      <AddressContainer className='address-container' 
         walletAddress={walletAddress}
         onSubmitHandler={onClickHandler}
         handleSubmit={handleSubmit}
         handleAddress={handleAddress}
-        />
-      <WalletSelector 
-        walletAddress={walletAddress}
         setAddressState={setAddressState}
-        />
+       />
+
       <CardsContainer className='cards-container' 
         walletAddress={walletAddress} />
     </div>

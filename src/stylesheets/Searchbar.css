@@ -19,13 +19,13 @@
 
 button {
   border-radius: 5px;
-  height: 25px;
+  padding: 5px 10px 5px 10px;
   background-color: #3465a4;
   color:white;
   font-family: 'joystix';
 }
 
 #buttondiv{
-  margin-top: 10px;
+  margin-top: 20px;
 }
 

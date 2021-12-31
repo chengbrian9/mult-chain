@@ -2,12 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import '../stylesheets/Card.css';
 const Card = ({ 
-  data
+  data, className
 }) => {
 
   return (
-    <div>
-      <img id='nft' src={data.image_url} />
+    <div id='jpeg'>
+      <img className={className} id='nft' src={data.image_url} />
     </div>
   )
 }
