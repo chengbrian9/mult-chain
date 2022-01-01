@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../stylesheets/Searchbar.css';
-import mmlogo from '../assets/mm.png';
+
 
 const Searchbar = ({ walletAddress, handleSubmit, handleAddress, setAddressState }) => {
   

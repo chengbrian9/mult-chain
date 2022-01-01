@@ -1,6 +1,6 @@
 @font-face {
   font-family: joystix;
-  src: url('/src/assets/joystix_monospace.ttf');
+  src: url('/public/joystix_monospace.ttf');
 }
 
 .App {

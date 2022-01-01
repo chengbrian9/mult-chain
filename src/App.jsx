@@ -58,15 +58,6 @@ const App = () => {
   
   useEffect(() => {
     checkIfWalletConnected();
-  //   async function listenMMAccount() {
-  //     window.ethereum.on("accountsChanged", async function() {
-  //       // Time to reload your interface with accounts[0]!
-  //       accounts = await web3.eth.getAccounts();
-  //       // accounts = await web3.eth.getAccounts();
-  //       console.log(accounts);
-  //     });
-  //   }
-  //   listenMMAccount();
   }, []);
   
 
