@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server/server.js",
+    "start": "node ./server/server.js",
     "dev": "concurrently \"NODE_ENV=development webpack serve --open ./\" \"nodemon ./server/server.js\"",
-    "build": "webpack"
+    "build": "webpack",
+    "postinstall": "webpack -p"
   },
   "keywords": [],
   "author": "",
