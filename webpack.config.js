@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -17,7 +17,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['git @babel/preset-env', '@babel/preset-react']
+              presets: ['@babel/preset-env', '@babel/preset-react']
             }
           }
         ], 
