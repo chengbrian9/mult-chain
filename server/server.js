@@ -11,12 +11,12 @@ const addressRouter = require('./routes/addresses.js')
 app.use(express.json());
 
 //handle static files
-app.use('/assets', express.static(path.join(__dirname, '../public/assets')));
+app.use('/assets', express.static(path.join(__dirname, '../src/assets')));
 
 //route handlers
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../public/index.html'))
+  res.sendFile(path.resolve(__dirname, '../src/index.html'))
 })
 
 app.use('/api', apiRouter);
