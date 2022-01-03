@@ -7,7 +7,7 @@
     "start": "node ./server/server.js",
     "dev": "concurrently \"NODE_ENV=development webpack serve --open ./\" \"nodemon ./server/server.js\"",
     "build": "webpack",
-    "postinstall": "webpack -p"
+    "postinstall": "webpack"
   },
   "keywords": [],
   "author": "",
