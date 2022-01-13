@@ -1,14 +1,11 @@
 const path = require('path');
 const express = require('express');
+const favicon = require('express-favicon')
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 8080;
 
 //routers
-const apiRouter = require('./routes/api.js');
-const addressRouter = require('./routes/addresses.js')
-
-//handle parsing request body
-app.use(express.json());
+app.use(favicon(__dirname + '/public/favicon.png'));
 
 //handle static files
 app.use('/assets', express.static(path.join(__dirname, '../src/assets')));
@@ -19,8 +16,6 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../src/index.html'))
 })
 
-app.use('/api', apiRouter);
-app.use('/api/address', addressRouter); 
 
 // catch-all route handler for any requests to an unknown route
 app.use((req, res) => {
