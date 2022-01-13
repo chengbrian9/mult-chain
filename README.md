@@ -10,8 +10,8 @@
 
 </br>
 
-<p align="center"><img src="https://github.com/chengbrian9/mult-chain/blob/master/src/assets/512px-React-icon.svg.png?raw=true" alt='react-logo' style="height: 75px; width: 75px;">
-<img src="https://github.com/chengbrian9/mult-chain/blob/master/src/assets/nodelogo.png?raw=true" alt='node-logo' style="height: 75px; width: 75px; margin-left: 10px; margin-right: 10px;">
+<p align="center"><img src="https://github.com/chengbrian9/mult-chain/blob/master/src/assets/512px-React-icon.svg.png?raw=true" alt='react-logo' style="height: 75px; width: 105px;">
+<img src="https://github.com/chengbrian9/mult-chain/blob/master/src/assets/nodelogo.png?raw=true" alt='node-logo' style="height: 75px; width: 75px; margin-left: 25px; margin-right: 25px;">
 <img src="https://github.com/chengbrian9/mult-chain/blob/master/src/assets/oslogo.png?raw=true" alt='os-logo' style="height: 75px; width: 75px; ">
 
 
