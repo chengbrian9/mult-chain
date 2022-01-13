@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
-import unnamed from '../assets/unnamed.png'
+import React from 'react';
 import '../stylesheets/Walletselector.css';
 
 
