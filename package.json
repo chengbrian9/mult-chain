@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/server.js",
+    "start": "webpack -p && node ./server/server.js",
     "build": "webpack",
-    "postinstall": "webpack",
     "dev": "concurrently \"NODE_ENV=development webpack serve --open ./\" \"nodemon ./server/server.js\""
   },
   "keywords": [],
