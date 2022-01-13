@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../stylesheets/Searchbar.css';
-import mmlogo from '../assets/mm.png';
-
+import gif from '../assets/giphy.gif';
 const Searchbar = ({ walletAddress, handleSubmit, handleAddress, setAddressState }) => {
   
   const connectWallet = async () => {
@@ -22,7 +21,7 @@ const Searchbar = ({ walletAddress, handleSubmit, handleAddress, setAddressState
   return (
     <div className='searchbar'>
       <h1>Welcome to the meta-verse!</h1>
-      
+      <img className='logo' style={{height: '250px', width: '250px'}} src={gif}/>
       <div id='directions'><label>Input your wallet address to continue...</label></div>
       <form onSubmit={handleSubmit}><div id='inputdiv'><input 
         id='search'

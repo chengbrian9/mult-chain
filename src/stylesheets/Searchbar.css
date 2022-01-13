@@ -2,8 +2,8 @@
   display: grid;
   justify-content: center;
   text-align: center;
-  padding-top: 75px;
   padding-bottom: 15px;
+  justify-items: center;
 }
 
 #search {
@@ -14,6 +14,7 @@
 }
 
 #directions{
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 

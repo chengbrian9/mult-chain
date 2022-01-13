@@ -9,6 +9,11 @@ img {
   box-shadow: 5px 5px 10px lightslategray
 }
 
+img.logo {
+  box-shadow: none;
+  align-items: center;
+}
+
 #jpeg {
   display: grid;
   justify-content: center;

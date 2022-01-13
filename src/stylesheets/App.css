@@ -4,7 +4,7 @@
 }
 
 .App {
-  display: grid;
+  display: inline-block;
   font-family: 'joystix';
 }
 
