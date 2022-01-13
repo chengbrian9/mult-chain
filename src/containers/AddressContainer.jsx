@@ -3,7 +3,7 @@ import Searchbar from '../components/Searchbar.jsx'
 import '../stylesheets/AddressContainer.css';
 
 const AddressContainer = ({
-  setAddressState, walletAddress, selectAddress, onClickHandler, handleSubmit, handleAddress
+  setAddressState, walletAddress, handleSubmit, handleAddress
 }) => {
   
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../stylesheets/Searchbar.css';
 import gif from '../assets/giphy.gif';
 const Searchbar = ({ walletAddress, handleSubmit, handleAddress, setAddressState }) => {
@@ -34,7 +34,6 @@ const Searchbar = ({ walletAddress, handleSubmit, handleAddress, setAddressState
         </div>
         {!walletAddress && (
           <button className="wallet" onClick={connectWallet}>
-            {/* <img style={{height: '25px', width: '30px', float: 'left', marginRight: '10px'}} src={mmlogo}/>  */}
             Connect Wallet 
           </button>
         )}

@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import '../stylesheets/Card.css';
 const Card = ({ 
   data, className

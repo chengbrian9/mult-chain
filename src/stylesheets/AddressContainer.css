@@ -1,6 +1,5 @@
 .address-container {
   display: grid;
-  /* grid-template-columns: 96vw 8vw; */
   justify-content: center;
  
 }
