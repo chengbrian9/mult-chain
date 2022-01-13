@@ -12,7 +12,7 @@ app.use('/assets', express.static(path.join(__dirname, './src/assets')));
 
 //route handlers
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, './src/index.html'))
 })
 
