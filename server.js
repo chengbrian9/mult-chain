@@ -8,12 +8,12 @@ const PORT = process.env.PORT || 3000;
 app.use(favicon(path.join(__dirname + '/public/favicon.ico')));
 
 //handle static files
-app.use('/assets', express.static(path.join(__dirname, '/src/assets')));
+app.use('/assets', express.static(path.join(__dirname, './src/assets')));
 
 //route handlers
 
 app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '/src/index.html'))
+  res.sendFile(path.resolve(__dirname, './src/index.html'))
 })
 
 
