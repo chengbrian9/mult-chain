@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 //routers
-app.use(favicon(__dirname + '/public/favicon.png'));
+app.use(favicon(__dirname + '../public/favicon.png'));
 
 //handle static files
 app.use('/assets', express.static(path.join(__dirname, '../src/assets')));
